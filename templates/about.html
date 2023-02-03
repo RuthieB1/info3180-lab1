@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>My Website - About</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/app.css') }}"
+    />
   </head>
   <body>
     <h1>Ruth-Ann Blair</h1>
@@ -11,5 +15,6 @@
       Development since it is an opportunity to further develop technical skills
       that will be useful in my career.
     </p>
+    <img src="{{ url_for('static', filename='flowers.jpg') }}" />
   </body>
 </html>
